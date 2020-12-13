@@ -15,8 +15,7 @@ b = I + 10 * np.random.randn(*I.shape)
 
 # Construct problem.
 x = Variable(I.shape)
-prob = Problem(sum_squares(x - b / 255) + .1 * norm1(grad(x)) + nonneg(x),
-               implem=Impl['halide'])
+prob = Problem(sum_squares(x - b / 255) + .1 * norm1(grad(x)) + nonneg(x))
 
 # Solve problem.
 result = prob.solve(verbose=True, solver='pc')

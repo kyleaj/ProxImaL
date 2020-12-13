@@ -95,7 +95,6 @@ class patch_NLM(ProxFn):
                                                     self.templateWindowSizeNLM,
                                                     self.searchWindowSizeNLM)
             else:
-
                 vdstuint = cv2.fastNlMeansDenoisingColored(vuint, None,
                                                            sigma_luma * 255.0, sigma_color * 255.,
                                                            self.templateWindowSizeNLM,

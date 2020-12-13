@@ -11,6 +11,7 @@ from .variable import Variable
 from .vstack import vstack, split
 from .hstack import hstack
 from .grad import grad
+from .bayerize import bayerize
 from .warp import warp
 from .mul_color import mul_color
 from .reshape import reshape
